@@ -1,12 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+
+import Home from "./components/Home"
+import NavB from "./components/NavBar";
+
+import s from "./App.module.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p> HELLO SAPICO !</p>
-      </header>
+    <div className={s.App}>
+      <NavB />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        {/* <Route path="/home" element={<Home />} /> */}
+        {/* <Route path="/home" element={<Home />} /> */}
+      </Routes>
     </div>
   );
 }
