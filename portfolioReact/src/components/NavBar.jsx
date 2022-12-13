@@ -1,21 +1,14 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
+
+import s from "./NavBar.module.css"
 
 function NavB () {
     return (
-        <>
-            <Navbar bg="dark" variant="dark">
-                <Container>                    
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Portfolio</Nav.Link>
-                        <Nav.Link href="#pricing">About Me</Nav.Link>
-                        <Nav.Link href="#pricing">Contact Me</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>        
-        </>
+        <div className={s.Navbar}>
+            <Link to="/Home" className={s.link}>Home</Link>
+            <Link to="/About" className={s.link}>About Me</Link>
+            <Link to="/Contact" className={s.link}>Contact</Link>
+        </div>
     )
 };
 

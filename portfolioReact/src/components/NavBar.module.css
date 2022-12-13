@@ -1,0 +1,12 @@
+.Navbar {
+    background-color: black;
+    height: 50px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.link{
+    margin-left: 2%;
+    
+}
