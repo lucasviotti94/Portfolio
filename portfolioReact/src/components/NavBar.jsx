@@ -7,6 +7,7 @@ function NavB () {
         <div className={s.Navbar}>
             <Link to="/Home" className={s.link}>Home</Link>
             <Link to="/About" className={s.link}>About Me</Link>
+            <Link to="/Contact" className={s.link}>Portfolio</Link>
             <Link to="/Contact" className={s.link}>Contact</Link>
         </div>
     )

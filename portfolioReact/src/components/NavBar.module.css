@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
 .Navbar {
-    background-color: black;
+    /* background-color: black; */
     height: 50px;    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex;        
+    justify-content: end;
+    align-items: center;  
 }
 
 .link{
-    margin-left: 2%;
-    
+    margin-right: 3%;
+    text-decoration: none;        
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.2rem;
 }

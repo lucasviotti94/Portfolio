@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Kanit:ital,wght@1,500&display=swap');
+.home {
+    /* color: white; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.topText {
+    position: absolute;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-size: 120px;
+    -webkit-text-stroke: 2px #fff;
+    /* text-decoration: underline; */
+    opacity: 0.8;
+    top: 3%;
+    left: 2%;
+}
+
+.secondText {
+    position: absolute;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 2rem;
+    text-decoration: underline;
+    top: 20%;
+    left: 3%;
+}
+.home section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 600px;
+    padding: 100px 20vw;
+    overflow: hidden;
+}
+
+.section1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;    
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);    
+    
+}
+.home img{    
+    width: 100%;
+    position: absolute;    
+    overflow: hidden;    
+    top: -350px;   
+    margin-right: 5px; 
+    opacity: 0.85;
+}
+
+.imgLaptop{    
+    display: flex;    
+}
+
+.svgs {
+    position: absolute;
+    top:0;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 491px;
+    
+}
+
+.svgs path{   
+
+}
+
+.section2 {
+    background: rgb(184,138,0);
+background: linear-gradient(0deg, rgba(184,138,0,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.section3 {
+    background-color: brown;
+}
+
+.section4 {
+    background-color: red;
+}
