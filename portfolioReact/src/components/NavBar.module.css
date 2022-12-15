@@ -1,16 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
-.Navbar {
-    /* background-color: black; */
-    height: 50px;    
-    display: flex;        
-    justify-content: end;
-    align-items: center;  
+.header{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.6);
+}
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    color: antiquewhite;    
+    transition: 1s ease;
 }
 
-.link{
+.link {    
     margin-right: 3%;
-    text-decoration: none;        
+    list-style:none; 
+    text-decoration: none;     
     font-family: 'Cutive Mono', monospace;
-    font-size: 1.2rem;
+    font-size: 1.3rem;   
+    transition: 1s ease;
+}
+
+.linkActive {
+    margin-right: 3%;
+    list-style:none; 
+    text-decoration: none;     
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.4rem;   
+    border-bottom: 3px solid grey; 
+    transition: 1s ease;
 }
