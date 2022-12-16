@@ -1,48 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 .main{
-    background-color: grey;
-    height: 960px;
-    display: flex;    
-    align-items: center;
+  background-color: grey;
+  height: 960px;
+  display: flex;   
+  flex-direction: column; 
+  align-items: center;  
+  max-width: 2500px;
+  overflow: hidden;
 }
 
-.text{
-    position: absolute;    
-    left: 12.5%;
-    border-radius: 4px;
-    font-family: "Anton", sans-serif;
-    font-family: "Bebas Neue", cursive;
-    font-size: 150px;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    opacity: 0.8;        
-    background: url("../assets/back.png");    
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
-    border-bottom: 10px solid white;
-    border-top: 10px solid white;
-    top: 100%;
+.text{    
+  margin-top: 4%;
+  left: 12.5%;    
+  font-family: "Anton", sans-serif;
+  font-family: "Bebas Neue", cursive;
+  font-size: 150px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  opacity: 0.8;        
+  background: url("../assets/back.png");    
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  border-bottom: 10px solid white;
+  border-top: 10px solid white;
 }
 
 .henry{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 400px;
-  margin-top: 8%;
-  
+  width: 100%;
+  margin-top: 5%;
+  /* justify-content: center; */
 }
 
 .imgCertificado {
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  transition: all 2s ease;
 }
 
 .imgCertificado img {
-  height: 350px;
+  height: 450px;
+  box-shadow: 8px 8px 10px black;
+  transition: all 2s ease;
 }
 
+
+.skills{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.skills h1 {
+  display: flex;
+  color: white;
+  margin-left: 17%;
+  margin-top: 1%;
+  margin-bottom: 6%;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 2.3rem;  
+  text-shadow: 2px 2px 2px black;
+  border-bottom: 4px solid white;
+  border-top: 4px solid white;
+  border-right: 4px solid white;
+  border-left: 4px solid white;
+  width: 425px;
+  box-shadow: 2px 2px 5px black;
+
+}
+
+.firstRow{
+  display: flex;
+  width: 100%;  
+}
+
+.secondRow{
+  display: flex;
+  width: 100%;
+}
+
+.firstRow svg:hover{
+  transform: translateY(5px);
+  transition: all 2s;
+}
 
 @keyframes back {
     100% {

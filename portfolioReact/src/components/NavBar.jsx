@@ -47,7 +47,7 @@ const NavB = () => {
     window.addEventListener("scroll", contactScroll)    
    
     return (
-        <div className={s.header}>   
+        <section className={s.header}>   
             <nav>
                 <ul className={s.navBar}>                    
                     <li className={homeStyle === true ? s.linkActive : s.link}>
@@ -65,7 +65,7 @@ const NavB = () => {
                 </ul>
             </nav>         
            
-        </div>
+        </section>
     )
 };
 
