@@ -1,8 +1,10 @@
-import s from "./NavBar.module.css"
 import { Link } from "react-scroll";
 import { useState } from "react";
 
+import s from "./NavBar.module.css"
+
 const NavB = () => {
+
 
     const [homeStyle, setHomeStyle] = useState(true);
     const [educationStyle, setEducationStyle] = useState(false);
