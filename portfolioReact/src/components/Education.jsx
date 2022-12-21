@@ -1,5 +1,5 @@
-import s from "./Education.module.css"
 import pic1 from "../assets/certificate.png"
+import pic2 from "../assets/arrow.png"
 import { IoLogoNodejs } from "react-icons/io";
 import { IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io";
@@ -17,6 +17,7 @@ import { SiDiscord } from "react-icons/si";
 import { motion } from "framer-motion" 
 import { useState } from "react";
 
+import s from "./Education.module.css"
 
 const Education = () => {    
     const [move, setMove ] = useState(false)
@@ -54,51 +55,54 @@ const Education = () => {
                 <div className={s.skills}>
                     <h1> Tecnologies learned</h1>
                     <div className={s.firstRow}>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}} animate={{scale: nodeMove ? 1.5 : 1,}} onClick={() => {setNodeMove(!nodeMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}} animate={{scale: nodeMove ? 1.5 : 1,}} onHoverStart={() => {setNodeMove(!nodeMove)}}>
                             <IoLogoNodejs size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)" , borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: nodeMove ? "green" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: htmlMove ? 1.5 : 1}} onClick={() => {setHtmlMove(!htmlMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: htmlMove ? 1.5 : 1}} onHoverStart={() => {setHtmlMove(!htmlMove)}}>
                             <IoLogoHtml5 size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: htmlMove ? "orange" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: cssMove ? 1.5 : 1}} onClick={() => {setCssMove(!cssMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: cssMove ? 1.5 : 1}} onHoverStart={() => {setCssMove(!cssMove)}}>
                             <IoLogoCss3 size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: cssMove ? "rgba(46,109,175,1)" : ""}}/>
                         </motion.div> 
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: reactMove ? 1.5 : 1}} onClick={() => {setReactMove(!reactMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: reactMove ? 1.5 : 1}} onHoverStart={() => {setReactMove(!reactMove)}}>
                             <IoLogoReact size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: reactMove ? "rgba(38,170,204,1)" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: jsMove ? 1.5 : 1}} onClick={() => {setJsMove(!jsMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: jsMove ? 1.5 : 1}} onHoverStart={() => {setJsMove(!jsMove)}}>
                             <IoLogoJavascript size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: jsMove ? "rgba(246,255,27,1)" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: reduxMove ? 1.5 : 1}} onClick={() => {setReduxMove(!reduxMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: reduxMove ? 1.5 : 1}} onHoverStart={() => {setReduxMove(!reduxMove)}}>
                             <SiRedux size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: reduxMove ? "rgba(171,67,153,1)" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: sequeMove ? 1.5 : 1}} onClick={() => {setSequeMove(!sequeMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: sequeMove ? 1.5 : 1}} onHoverStart={() => {setSequeMove(!sequeMove)}}>
                             <SiSequelize size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: sequeMove ? "rgba(79,153,215,1)" : ""}}/>                        
                         </motion.div>
                     </div>
                     <div className={s.secondRow}>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: exprMove ? 1.5 : 1}} onClick={() => {setExprMove(!exprMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: exprMove ? 1.5 : 1}} onHoverStart={() => {setExprMove(!exprMove)}}>
                             <SiExpress size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: exprMove ? "white" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: postMove ? 1.5 : 1}} onClick={() => {setPostMove(!postMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: postMove ? 1.5 : 1}} onHoverStart={() => {setPostMove(!postMove)}}>
                             <SiPostgresql size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: postMove ? "rgba(32,99,156,1)" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: materialMove ? 1.5 : 1}} onClick={() => {setMaterialMove(!materialMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: materialMove ? 1.5 : 1}} onHoverStart={() => {setMaterialMove(!materialMove)}}>
                             <SiMaterialui size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: materialMove ? "rgba(61,166,213,1)" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: bootsMove ? 1.5 : 1}} onClick={() => {setBootsMove(!bootsMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: bootsMove ? 1.5 : 1}} onHoverStart={() => {setBootsMove(!bootsMove)}}>
                             <SiBootstrap size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: bootsMove ? "rgba(148,58,189,1)" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: gitMove ? 1.5 : 1}} onClick={() => {setGitMove(!gitMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: gitMove ? 1.5 : 1}} onHoverStart={() => {setGitMove(!gitMove)}}>
                             <SiGithub size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: gitMove ? "rgba(130,130,130,1)" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: slackMove ? 1.5 : 1}} onClick={() => {setSlackMove(!slackMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: slackMove ? 1.5 : 1}} onHoverStart={() => {setSlackMove(!slackMove)}}>
                             <SiSlack size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: slackMove ? "white" : ""}}/>
                         </motion.div>
-                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: discordMove ? 1.5 : 1}} onClick={() => {setDiscordMove(!discordMove)}}>
+                        <motion.div style={{ margin:"1%"}} transition={{type: "spring", duration: 1.5}}animate={{scale: discordMove ? 1.5 : 1}} onHoverStart={() => {setDiscordMove(!discordMove)}}>
                             <SiDiscord size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: discordMove ? "rgba(66,82,251,1)" : ""}}/>
                         </motion.div>
                     </div>
+                    {/* <h2>(Click for more info)</h2> */}
+                    {/* <h2>Click for some info...</h2>
+                    <img src={pic2} alt="pic2"/>                   */}
                 </div>                
             </div>
         </section>

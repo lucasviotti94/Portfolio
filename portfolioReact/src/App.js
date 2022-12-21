@@ -39,7 +39,7 @@ function App() {
       <NavB />      
       <div ref={landingRef}  id="home">            
         <LandingSection />
-      </div>
+      </div>    
       <div ref={educationRef}>
         <Education />         
       </div>     
@@ -47,15 +47,9 @@ function App() {
         <Portfolio />   
       </div> 
       <div ref={contactRef}>
-        {/* <ScrollContainer>
-          <ScrollPage>
-            <Animator >
-              <Contact/>    
-            </Animator>
-          </ScrollPage>
-        </ScrollContainer>         */}
         <Contact/>    
       </div> 
+      
     </div>
   );
 }
