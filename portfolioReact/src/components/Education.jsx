@@ -1,5 +1,4 @@
 import pic1 from "../assets/certificate.png"
-import pic2 from "../assets/arrow.png"
 import { IoLogoNodejs } from "react-icons/io";
 import { IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io";
@@ -100,9 +99,6 @@ const Education = () => {
                             <SiDiscord size="90px" style={{boxShadow:"0px 4px 30px rgba(0, 0, 0, 0.1)",backdropFilter: "blur(6.4px)", WebkitBackdropFilter: "blur(6.4px)", borderRadius:"10%", background: "rgba(255, 255, 255, 0.1)", color: discordMove ? "rgba(66,82,251,1)" : ""}}/>
                         </motion.div>
                     </div>
-                    {/* <h2>(Click for more info)</h2> */}
-                    {/* <h2>Click for some info...</h2>
-                    <img src={pic2} alt="pic2"/>                   */}
                 </div>                
             </div>
         </section>
