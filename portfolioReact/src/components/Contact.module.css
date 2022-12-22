@@ -1,4 +1,29 @@
 .main{
-    background: rgba(255,189,97,1);
+    background: #0a323d; 
     height: 860px;
+    display: flex;
+    justify-content: center;    
 }
+
+.container{
+    width: 30%;
+    height: 30%;
+    background-color: #0e4352;
+    /* border-radius: 1.5%; */
+    box-shadow: 3px 3px 6px 2px black;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Cutive Mono', monospace;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7%;
+    gap: 10%;
+}
+
