@@ -30,7 +30,7 @@ const LandingSection = () => {
                 animate={{x: move && 1400}}  
                 >Im 28.
             </motion.div>
-            <motion.div 
+            <motion.div
                 className={s.secondText}
                 transition={{type: "spring", duration: 5}}
                 animate={{x: move && 1400}}  
@@ -40,7 +40,7 @@ const LandingSection = () => {
                 className={s.secondText}
                 transition={{type: "spring", duration: 6}}
                 animate={{x: move && 1400}}  
-                >Scroll down to know a bit of me.
+                >Down below you can know more about me
             </motion.div>
         </section>
     )
